@@ -6,4 +6,4 @@ title: About
 
 
 
-Organized by **[@hackrecord](https://www.instagram.com/hackrecord)** . **CYBERCRIME ARCHIVE**
+Bug Bounty Hunter | Penetration Tester  | Security Researchers . Organized by **[@hackrecord](https://www.instagram.com/hackrecord)** 
