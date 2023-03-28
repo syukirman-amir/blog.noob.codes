@@ -14,7 +14,7 @@ github_username:    noobscodes # Your GitHub username here
 # Site Settings
 baseurl:            "" # Base URL must end WITHOUT a slash, default: ""
 permalink:          /codes/:title # Post permalink
-timezone:           Asia/Calcutta # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:           Asia/Jayapura # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 mathjax:            false  # enables support for mathjax - set to false to disable
 
 # Disqus Comments
