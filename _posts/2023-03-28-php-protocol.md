@@ -44,15 +44,16 @@ if (isset($_GET["dir"]) && !empty($_GET["dir"])) {
 
 - _Variabel_ `$flag` yang diisi dengan path file yang memenuhi pola `/tmp/chall/flag[a-fA-F0-9]{15}.txt`. Variabel ini kemungkinan besar digunakan untuk menyimpan isi file flag yang ingin diambil.
 
-```
-$flag = "/tmp/chall/flag[a-fA-F0-9]{15}.txt"; adalah sebuah pernyataan pada bahasa pemrograman PHP yang menetapkan nilai string ke dalam variabel $flag.
+> __Warning__
+>
+> `$flag = "/tmp/chall/flag[a-fA-F0-9]{15}.txt";` adalah sebuah variabel $flag yang berisi nilai string.
+>
+> Nilai string tersebut adalah `/tmp/chall/flag[a-fA-F0-9]{15}.txt`, yang merupakan pola atau pattern yang digunakan untuk mencocokkan file yang diinginkan.
+>
+> Pola tersebut menggunakan regular expression atau ekspresi reguler untuk mencari file dengan nama flag di dalam direktori `/tmp/chall/` yang diikuti oleh `15 karakter alfanumerik` acak `(a-f, A-F, 0-9)` dan diakhiri dengan ekstensi `.txt`.
+>
+> Dengan kata lain, `$flag` akan menunjukkan path file yang memenuhi pola tersebut jika ditemukan.
 
-Nilai string tersebut adalah /tmp/chall/flag[a-fA-F0-9]{15}.txt, yang merupakan pola atau pattern yang digunakan untuk mencocokkan file yang diinginkan.
-
-Pola tersebut menggunakan regular expression atau ekspresi reguler untuk mencari file dengan nama flag di dalam direktori /tmp/chall/ yang diikuti oleh 15 karakter alfanumerik acak (a-f, A-F, 0-9) dan diakhiri dengan ekstensi .txt.
-
-Dengan kata lain, $flag akan menunjukkan path file yang memenuhi pola tersebut jika ditemukan.
-```
 - _Struktur percabangan_ `if-else` yang berfungsi untuk mengecek apakah terdapat parameter `dir` pada URL. Jika iya, maka program akan melakukan `iterasi` pada setiap file di dalam `direktori` yang diacu oleh parameter tersebut dan menampilkan `ukuran file` masing-masing. Namun jika parameter `dir` tidak ada atau kosong, maka program akan menampilkan kode PHP dari file tersebut menggunakan fungsi `highlight_file(__FILE__);`.
 
 Sehingga, jika kita mengakses file tersebut melalui URL dengan menambahkan parameter `dir`, maka program akan menampilkan ukuran file-file di dalam direktori tersebut. Namun jika kita mengakses file tersebut tanpa parameter `dir`, maka program akan menampilkan source code-nya.
@@ -96,9 +97,10 @@ Terdapat banyak `class` tetapi kita bakal fokus ke class `getSize` yang sudah di
 
 setelah baca dokumentasi `getSize` saya melihat ada `function filesize()` jika kalian scrool dokumentasi sebelumnya pada `getSize` terdapat pada bagian paling terakhir yang mengarah pada `https://www.php.net/manual/en/function.filesize.php` ketika dibaca disitu tertulis :
 
-```
-**TIP** As of PHP 5.0.0, this function can also be used with some URL wrappers. Refer to Supported Protocols and Wrappers to determine which wrappers support stat() family of functionality.
-```
+> __Note__
+> 
+> TIP As of PHP 5.0.0, this function can also be used with some URL wrappers. Refer to `Supported Protocols and Wrappers` to determine which wrappers support stat() family of functionality.
+
 bisa dilihat disitu tertulis `Supported Protocols and Wrappers` bisa dilihat dokumentasinya disini `https://www.php.net/manual/en/wrappers.php` yang kira-kira isinya seperti ini : 
 
 `Table of Contents`
