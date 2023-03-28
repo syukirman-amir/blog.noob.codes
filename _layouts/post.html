@@ -12,8 +12,10 @@ layout: default
 	<section>
 	    <div class="tags-expo">
 		<div class="tags-expo-list">
+		    <p style="color:#26785d;">
 		    {% if page.tags %} 
 		    {% for tag in page.tags %}
+		    </p>
 		    <a href="{{ site.baseurl }}/tags#{{ tag | slugify }}" class="post-tag">{{ tag }}</a>
 		    {% endfor %}
 		    {% endif %}
