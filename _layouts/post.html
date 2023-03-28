@@ -15,10 +15,10 @@ layout: default
 		    <p style="color:#26785d;">
 		    {% if page.tags %} 
 		    {% for tag in page.tags %}
-		    </p>
 		    <a href="{{ site.baseurl }}/tags#{{ tag | slugify }}" class="post-tag">{{ tag }}</a>
 		    {% endfor %}
 		    {% endif %}
+		    </p>
 		</div>
 	    </div>
 	</section>
