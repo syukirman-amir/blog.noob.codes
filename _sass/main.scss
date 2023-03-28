@@ -341,15 +341,15 @@ section {
       }
       span {
         display: inline-block;
-        color: #757575;
+        color: #ff79c6;
         letter-spacing: 1px;
         text-transform: uppercase;
       }
       @media (min-width: 992px) {a {
           border-bottom: 2px solid transparent;
           &:hover {
-		  border-color: #c9cacc;
-		  color: #c9cacc;
+		  border-color: #ff79c6;
+		  color: #ff79c6;
           }
           }
       }
