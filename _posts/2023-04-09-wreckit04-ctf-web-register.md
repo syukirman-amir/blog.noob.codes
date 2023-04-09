@@ -125,7 +125,8 @@ http://167.71.207.218:35081/index.php?file=index.php
 ![register](../writeup/register/012.png)
 
 Ternyata gagal, dia hanya menimpah kembali file tersebut dan kita tidak dapat melihat isi kode `index.php`
-Searching sana sini dan ketemu ` PHP Supported Protocols and Wrappers` 
+
+Searching sana sini dan ketemu `PHP Supported Protocols and Wrappers` 
 
 ```
 file:// — Accessing local filesystem
