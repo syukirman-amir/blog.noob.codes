@@ -17,7 +17,7 @@ author: iluv
 
 Diberikan sebuah soal tentang cripto
 
-[soal register](../writeup/criptofree/1.png)
+![soal register](../writeup/criptofree/1.png)
 
 yang berisi file download dengan nama file yaitu `soal.secret`
 
