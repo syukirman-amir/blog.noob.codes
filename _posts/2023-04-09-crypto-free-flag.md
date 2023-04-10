@@ -192,6 +192,7 @@ Kode lengkapnya seperti ini :
 ```python
 
 import base64
+import string
 
 kode_biner = 'MASUKAN ANGKA BINER DISINI'
 
