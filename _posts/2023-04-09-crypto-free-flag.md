@@ -34,10 +34,10 @@ mari kita titik fokuskan pada pernyataan `Bi UNTUK BINERRRRR!!!` dan password is
 
 kalau dilihat dari pola password disini saya asumsikan begini : 
 
-- Bi adalah `BINER`
-- H adalah `HEXA`
-- B32 adalah `BASE32`
-- R13 adalah `ROT13`
+- `Bi` adalah `BINER`
+- `H` adalah `HEXA`
+- `B32` adalah `BASE32`
+- `R13` adalah `ROT13`
 
 
 jadi kode awal yang diberikan adalah biner, disini kita akan merubah dari `biner` ke `hexa`
